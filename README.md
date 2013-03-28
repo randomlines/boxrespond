@@ -10,7 +10,7 @@ How to use
 
 Include the JS file, and fire the boxRespond function.
 
-```javascript
+```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/jquery.boxrespond.min.js"></script>
 <script>
