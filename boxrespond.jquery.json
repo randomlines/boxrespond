@@ -1,0 +1,25 @@
+{
+    "name": "boxrespond",
+    "version": "0.1",
+    "title": "Box Respond",
+    "author": {
+        "name": "Ashim D'Silva",
+        "url": "http://therandomlines.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6.1"
+    },
+    "description": "BoxRespond adds classes to HTML elements depending on their current width, allowing you to write styles that depend on the width of the box rather than the browser.",
+    "keywords": [
+        "css",
+        "responsive",
+        "flexbox",
+        "content"
+    ]
+}
