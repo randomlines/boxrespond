@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<style>
+			*
+			{
+				box-sizing: border-box;
+			}
+			div
+			{
+				min-height: 100px;
+				border: 5px solid white;
+				background: gray;
+				text-align: center;
+				font-size: 32px;
+				line-height: 60px;
+				color: white;
+				font-family: sans-serif;
+				overflow: hidden;
+			}
+			.third
+			{
+				width: 50%;
+				float: left;
+			}
+			div span
+			{
+				display: block;
+			}
+			@media screen and (min-width: 600px)
+			{
+				.half
+				{
+					width: 50%;
+					float: left;
+				}
+				
+				.third
+				{
+					width: 33.33%;
+				}
+			}
+			
+			div>img
+			{
+				width: 100%;
+				float: left;
+			}
+			div.gt-200>img
+			{
+				width: 50%;
+			}
+			div.gt-400>img
+			{
+				width: 33.333%;
+			}
+			div.gt-600>img
+			{
+				width: 16.666%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="r-box gt-10" data-r-sizes="200, 400, 600">
+			<span></span>
+			<img src="http://placehold.it/200x200">
+			<img src="http://placehold.it/200x200">
+			<img src="http://placehold.it/200x200">
+			<img src="http://placehold.it/200x200">
+			<img src="http://placehold.it/200x200">
+			<img src="http://placehold.it/200x200">
+		</div>
+		<section>
+			<div class="half r-box" data-r-sizes="200, 400, 600">
+				<span></span>
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+			</div>
+			<div class="half r-box" data-r-sizes="200, 400, 600">
+				<span></span>
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+			</div>
+		</section>
+		<section>
+			<div class="third r-box" data-r-sizes="200, 400, 600">
+				<span></span>
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+			</div>
+			<div class="third r-box" data-r-sizes="200, 400, 600">
+				<span></span>
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+			</div>
+			<div class="third r-box" data-r-sizes="200, 400, 600">
+				<span></span>
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+				<img src="http://placehold.it/200x200">
+			</div>
+		</section>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.boxrespond.min.js"></script>
+		<script>
+			var sizes, $r;
+			$(window).resize(function(){
+				$('div').each(function(){
+					$(this).find('span').html($(this).width());
+				});
+			});
+			$.boxRespond();
+			$(window).resize();
+		</script>
+	</body>
+</html>
