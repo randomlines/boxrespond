@@ -21,7 +21,7 @@ Include the JS file, and fire the boxRespond function.
 BoxRespond looks for elements with the class ‘r-box’, and uses data from the ‘data-r-sizes’ attribute.
 
 ```html
-<div class="r-box" data-r="200, 400, 600">
+<div class="r-box" data-r-sizes="200, 400, 600">
   <!-- your responsive content goes here -->
 </div>
 ```
