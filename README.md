@@ -26,7 +26,7 @@ BoxRespond looks for elements with the class ‘r-box’, and uses data from the
 </div>
 ```
 
-When r-box is greater than 200, the class gt-200 will be added. Each box can have a different set of breakpoints, and have as many as required.
+When r-box is greater than 200, the class *gt-200* will be added. Similarly , if the box is smaller than or equal to 200, the class *lt-200* is added. Each box can have a different set of breakpoints, and have as many as required.
 
 Elements are free to respond to their own sizes and exist in any environment.
 
@@ -56,4 +56,4 @@ div.gt-600 .child
 }
 ```
 
-This will show one child per row as default, and increase to 2, 3 and 6 as the parent grows larger than 200, 400 and 600 respectively. All independant of its placement within the main structure.
+This will show one child per row as default, and increase to 2, 3 and 6 as the parent grows larger than 200, 400 and 600 respectively. All independent of its placement within the main structure.
